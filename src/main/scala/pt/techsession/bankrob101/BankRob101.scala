@@ -35,7 +35,7 @@ object BankRob101 extends App {
   def openSafeLock(safetyBoxNumber: String,pin: Int) : Future[Loot] = Future(Actions.openSafeLock(safetyBoxNumber, pin))
 
   //main execution of app:
-  Await.ready(openSafeLock(Thief.PETE, "António"), 20 seconds)
+  Await.ready(openSafeLock(Thief.PETE, "António Madeira"), 20 seconds)
   println("--------------------------------------------------")
   Await.ready(openSafeLock(Thief.LORA, "Tiago"), 20 seconds)
   println("--------------------------------------------------")

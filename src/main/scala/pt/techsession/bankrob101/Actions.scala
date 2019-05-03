@@ -31,8 +31,8 @@ object Actions {
     delay
     val lock = "A" + ThreadLocalRandom.current.nextInt(100)
 
-    if(personName.contains("Tiago"))
-      throw new RuntimeException("Tiago")
+    if(personName.contains("Tiago Madeira"))
+      throw new RuntimeException("Tiago Madeira")
 
     System.out.println(s"Got the safety box number: $lock")
     lock
